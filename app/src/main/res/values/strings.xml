@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EarthQuakeMoniter</string>
+    <string name="refreshing_data_please_wait">Refreshing data, please wait.</string>
+    <string name="error">Error</string>
+    <string name="something_went_wrong">Something went wrong, please try again later.</string>
+    <string name="ok">OK</string>
+    <string name="km_depth"> km depth</string>
+    <string name="no_info_found">No information found.</string>
+    <string name="netwrok_error">Network error</string>
+    <string name="check_your_connection">Check your connection, then try again.</string>
+</resources>

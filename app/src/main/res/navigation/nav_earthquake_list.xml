@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_earthquake_list"
+    app:startDestination="@id/earthQuakeListFragment">
+
+    <fragment
+        android:id="@+id/earthQuakeListFragment"
+        android:name="com.project.earthquake.ui.EarthQuakeListFragment"
+        android:label="fragment_earth_quake_list"
+        tools:layout="@layout/fragment_earth_quake_list" >
+        <action
+            android:id="@+id/action_earthQuakeListFragment_to_earthQuakeMapViewFragment"
+            app:destination="@id/earthQuakeMapViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/earthQuakeMapViewFragment"
+        android:name="com.project.earthquake.ui.EarthQuakeMapViewFragment"
+        android:label="fragment_earth_quake_map_view"
+        tools:layout="@layout/fragment_earth_quake_map_view" >
+        <argument
+            android:name="earthquakeitems"
+            app:argType="com.project.earthquake.data.network.EarthQuakeItem" />
+    </fragment>
+</navigation>
